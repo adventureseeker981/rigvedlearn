@@ -172,7 +172,7 @@ const LessonsPage = () => {
                               className={`${
                                 lessonCompleted
                                   ? 'bg-gray-200 text-gray-700 hover:bg-gray-300'
-                                  : 'bg-gradient-to-r from-[#FF9933] to-[#FFD700] hover:from-[#FF9933]/90 hover:to-[#FFD700]/90 text-white'
+                                  : 'bg-gradient-to-r from-teal-500 to-emerald-500 hover:from-teal-600 hover:to-emerald-600 text-white'
                               }`}
                             >
                               {lessonCompleted ? 'Review' : 'Start'}

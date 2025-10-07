@@ -1,4 +1,4 @@
-# Here are your Instructions
+# Why we chose Mandala 1
 
 Mandala 1 of the Rigveda holds profound significance as the opening book of humanity's oldest sacred text,
 containing 191 hymns that establish the philosophical and spiritual foundation for the entire Vedic corpus.

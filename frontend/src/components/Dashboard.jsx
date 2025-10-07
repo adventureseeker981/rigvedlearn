@@ -297,97 +297,44 @@ const Dashboard = () => {
           {/* XP Progress */}
           <Card id="xp-bar" className="hover:shadow-lg transition-shadow">
             <CardHeader>
-              <CardTitle className="text-[#000080]">Experience Points</CardTitle>
+              <CardTitle className="text-slate-800">Experience Points</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="py-8">
                 <div className="mb-6">
                   <div className="flex justify-between text-sm mb-2">
-                    <span className="font-semibold text-[#000080]">Level {xpData.currentLevel}</span>
-                    <span className="text-gray-600">Level {xpData.currentLevel + 1}</span>
+                    <span className="font-semibold text-violet-600">Level {xpData.currentLevel}</span>
+                    <span className="text-slate-600">Level {xpData.currentLevel + 1}</span>
                   </div>
                   <Progress value={xpProgress} className="h-4 bg-gray-200">
                     <div 
-                      className="h-full bg-gradient-to-r from-[#FF9933] to-[#FFD700] rounded-full transition-all"
+                      className="h-full bg-gradient-to-r from-violet-500 to-purple-500 rounded-full transition-all"
                       style={{ width: `${xpProgress}%` }}
                     />
                   </Progress>
-                  <div className="flex justify-between text-xs text-gray-500 mt-1">
+                  <div className="flex justify-between text-xs text-slate-500 mt-1">
                     <span>{xpData.currentXP} XP</span>
                     <span>{xpData.xpToNextLevel} XP</span>
                   </div>
                 </div>
 
                 <div className="space-y-3">
-                  <div className="flex items-center justify-between p-3 bg-[#FFF8DC]/50 rounded-lg">
-                    <span className="text-sm">Complete a lesson</span>
-                    <span className="text-sm font-bold text-[#FF9933]">+30 XP</span>
+                  <div className="flex items-center justify-between p-3 bg-teal-50 rounded-lg">
+                    <span className="text-sm text-slate-700">Complete a lesson</span>
+                    <span className="text-sm font-bold text-teal-600">+30 XP</span>
                   </div>
-                  <div className="flex items-center justify-between p-3 bg-[#FFF8DC]/50 rounded-lg">
-                    <span className="text-sm">Daily practice</span>
-                    <span className="text-sm font-bold text-[#FF9933]">+20 XP</span>
+                  <div className="flex items-center justify-between p-3 bg-emerald-50 rounded-lg">
+                    <span className="text-sm text-slate-700">Daily practice</span>
+                    <span className="text-sm font-bold text-emerald-600">+20 XP</span>
                   </div>
-                  <div className="flex items-center justify-between p-3 bg-[#FFF8DC]/50 rounded-lg">
-                    <span className="text-sm">Perfect score</span>
-                    <span className="text-sm font-bold text-[#FF9933]">+50 XP</span>
+                  <div className="flex items-center justify-between p-3 bg-cyan-50 rounded-lg">
+                    <span className="text-sm text-slate-700">Perfect score</span>
+                    <span className="text-sm font-bold text-cyan-600">+50 XP</span>
                   </div>
                 </div>
               </div>
             </CardContent>
           </Card>
-        </div>
-
-        {/* Action Buttons */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-          <Button
-            id="today-lesson-btn"
-            size="lg"
-            onClick={() => navigate('/lessons')}
-            className="h-24 bg-gradient-to-br from-[#FF9933] to-[#FFD700] hover:from-[#FF9933]/90 hover:to-[#FFD700]/90 text-white shadow-lg hover:shadow-xl transition-all"
-          >
-            <div className="text-center">
-              <Play className="mx-auto mb-2" size={24} />
-              <div className="font-bold">Today's Lesson</div>
-            </div>
-          </Button>
-
-          <Button
-            id="practice-btn"
-            size="lg"
-            variant="outline"
-            onClick={() => navigate('/practice')}
-            className="h-24 border-2 border-[#000080] text-[#000080] hover:bg-[#000080] hover:text-white transition-all"
-          >
-            <div className="text-center">
-              <Book className="mx-auto mb-2" size={24} />
-              <div className="font-bold">Practice Mode</div>
-            </div>
-          </Button>
-
-          <Button
-            id="achievements-btn"
-            size="lg"
-            variant="outline"
-            onClick={() => navigate('/achievements')}
-            className="h-24 border-2 border-[#FFD700] text-[#FFD700] hover:bg-[#FFD700] hover:text-white transition-all"
-          >
-            <div className="text-center">
-              <Trophy className="mx-auto mb-2" size={24} />
-              <div className="font-bold">Achievements</div>
-            </div>
-          </Button>
-
-          <Button
-            size="lg"
-            variant="outline"
-            onClick={() => navigate('/quests')}
-            className="h-24 border-2 border-gray-300 hover:border-gray-400 hover:bg-gray-50 transition-all"
-          >
-            <div className="text-center">
-              <Settings className="mx-auto mb-2" size={24} />
-              <div className="font-bold">Quests & Habits</div>
-            </div>
-          </Button>
         </div>
       </div>
     </div>

@@ -60,15 +60,15 @@ const LandingPage = () => {
               <span className="text-sm font-medium text-[#000080]">UNESCO Heritage • Modern Learning</span>
             </div>
             
-            <h1 className="text-5xl md:text-7xl font-bold text-[#000080] mb-6">
+            <h1 className="text-5xl md:text-7xl font-bold text-slate-800 mb-6">
               Ancient Wisdom,
               <br />
-              <span className="bg-gradient-to-r from-[#FF9933] to-[#FFD700] bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-teal-500 via-emerald-500 to-cyan-500 bg-clip-text text-transparent">
                 Modern Mastery
               </span>
             </h1>
             
-            <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
+            <p className="text-xl text-slate-600 mb-8 max-w-2xl mx-auto">
               Learn Rigveda Mandala 1 through gamified, bite-sized lessons. 
               Transform ancient Sanskrit hymns into daily wisdom and actionable habits.
             </p>
@@ -77,7 +77,7 @@ const LandingPage = () => {
               <Button
                 size="lg"
                 onClick={() => navigate('/dashboard')}
-                className="bg-gradient-to-r from-[#FF9933] to-[#FFD700] hover:from-[#FF9933]/90 hover:to-[#FFD700]/90 text-white px-8 py-6 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all"
+                className="bg-gradient-to-r from-teal-500 to-emerald-500 hover:from-teal-600 hover:to-emerald-600 text-white px-8 py-6 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all"
               >
                 Start Your Journey
                 <ArrowRight className="ml-2" size={20} />

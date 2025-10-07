@@ -18,8 +18,13 @@ const LessonsPage = () => {
   }, []);
 
   const isHymnUnlocked = (hymnIndex) => {
+    if (!progress) return hymnIndex === 0;
     return hymnIndex === 0 || progress.hymnsCompleted.includes(hymns[hymnIndex - 1].id);
   };
+
+  if (!progress) {
+    return <div className="min-h-screen flex items-center justify-center">Loading...</div>;
+  }
 
   const handleStartLesson = (hymn, lesson) => {
     navigate(`/lesson/${hymn.id}/${lesson.id}`);

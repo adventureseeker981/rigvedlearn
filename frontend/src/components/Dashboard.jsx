@@ -45,11 +45,17 @@ const Dashboard = () => {
   const handleImport = (e) => {
     const file = e.target.files[0];
     if (file) {
-      importProgress(file).then(() => {
-        setProgress(getUserProgress());
-        setStreakData(getStreakData());
-        setXPData(getXPData());
-      });
+      importProgress(file)
+        .then(() => {
+          setProgress(getUserProgress());
+          setStreakData(getStreakData());
+          setXPData(getXPData());
+          alert('Progress imported successfully!');
+          window.location.reload();
+        })
+        .catch((error) => {
+          alert('Error importing progress: ' + error.message);
+        });
     }
   };
 

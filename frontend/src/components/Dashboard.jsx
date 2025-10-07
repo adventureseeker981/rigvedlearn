@@ -282,12 +282,12 @@ const Dashboard = () => {
                   </svg>
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="text-center">
-                      <div className="text-4xl font-bold text-[#000080]">{Math.round(overallProgress)}%</div>
-                      <div className="text-sm text-gray-500">Complete</div>
+                      <div className="text-4xl font-bold text-teal-600">{Math.round(overallProgress)}%</div>
+                      <div className="text-sm text-slate-500">Complete</div>
                     </div>
                   </div>
                 </div>
-                <p className="text-sm text-gray-600 text-center">
+                <p className="text-sm text-slate-600 text-center">
                   Continue your journey through the sacred hymns
                 </p>
               </div>

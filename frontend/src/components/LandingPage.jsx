@@ -56,8 +56,8 @@ const LandingPage = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-24">
           <div className="text-center">
             <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full mb-6 shadow-sm">
-              <Award className="text-[#FF9933]" size={20} />
-              <span className="text-sm font-medium text-[#000080]">UNESCO Heritage • Modern Learning</span>
+              <Award className="text-teal-500" size={20} />
+              <span className="text-sm font-medium text-slate-700">Ancient Wisdom • Modern Learning</span>
             </div>
             
             <h1 className="text-5xl md:text-7xl font-bold text-slate-800 mb-6">

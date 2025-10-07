@@ -117,12 +117,12 @@ const MantraVisualizer = ({ sanskrit, transliteration, isPlaying, onTogglePlay, 
   };
 
   // Lotus petals
-  const drawLotus = (ctx, x, y, radius, phase) => {
+  const drawLotus = (ctx, x, y, radius, phase, audioIntensity = 0) => {
     const petals = 8;
     
     for (let i = 0; i < petals; i++) {
       const angle = (i * Math.PI * 2 / petals) + phase * 0.5;
-      const scale = 1 + Math.sin(phase * 3 + i) * 0.15;
+      const scale = 1 + Math.sin(phase * 3 + i) * 0.15 + (audioIntensity * 0.4);
       
       ctx.save();
       ctx.translate(x, y);

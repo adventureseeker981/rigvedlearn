@@ -37,10 +37,10 @@ const LessonsPage = () => {
   };
 
   const deityColors = {
-    Agni: 'from-orange-500 to-red-600',
-    Indra: 'from-blue-500 to-indigo-600',
-    Varuna: 'from-cyan-500 to-blue-600',
-    Vishnu: 'from-purple-500 to-pink-600'
+    Agni: 'from-rose-500 to-orange-500',
+    Indra: 'from-violet-500 to-purple-500',
+    Varuna: 'from-emerald-500 to-teal-500',
+    Vishnu: 'from-amber-500 to-yellow-500'
   };
 
   return (

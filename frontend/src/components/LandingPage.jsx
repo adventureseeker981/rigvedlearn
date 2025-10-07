@@ -41,10 +41,10 @@ const LandingPage = () => {
   ];
 
   const deities = [
-    { name: "Agni", desc: "Fire & Initiation", color: "from-orange-500 to-red-600" },
-    { name: "Indra", desc: "Courage & Action", color: "from-blue-500 to-indigo-600" },
-    { name: "Varuna", desc: "Ethics & Nature", color: "from-cyan-500 to-blue-600" },
-    { name: "Vishnu", desc: "Integration & Harmony", color: "from-purple-500 to-pink-600" }
+    { name: "Agni", desc: "Fire & Initiation", color: "from-rose-400 to-orange-500" },
+    { name: "Indra", desc: "Courage & Action", color: "from-violet-400 to-purple-500" },
+    { name: "Varuna", desc: "Ethics & Nature", color: "from-emerald-400 to-teal-500" },
+    { name: "Vishnu", desc: "Integration & Harmony", color: "from-amber-400 to-yellow-500" }
   ];
 
   return (

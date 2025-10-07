@@ -157,17 +157,17 @@ const MantraVisualizer = ({ sanskrit, transliteration, isPlaying, onTogglePlay, 
       ctx.restore();
     }
     
-    // Center Om symbol circle
-    const centerSize = 30 + Math.sin(phase * 2) * 5;
+    // Center Om symbol circle - pulses with audio
+    const centerSize = (30 + Math.sin(phase * 2) * 5) * (1 + audioIntensity * 0.8);
     ctx.beginPath();
     ctx.arc(x, y, centerSize, 0, Math.PI * 2);
     const centerGradient = ctx.createRadialGradient(x, y, 0, x, y, centerSize);
-    centerGradient.addColorStop(0, 'rgba(255, 153, 51, 0.8)');
-    centerGradient.addColorStop(1, 'rgba(255, 215, 0, 0.4)');
+    centerGradient.addColorStop(0, `rgba(255, 153, 51, ${0.8 + audioIntensity * 0.2})`);
+    centerGradient.addColorStop(1, `rgba(255, 215, 0, ${0.4 + audioIntensity * 0.3})`);
     ctx.fillStyle = centerGradient;
     ctx.fill();
-    ctx.strokeStyle = 'rgba(255, 215, 0, 0.9)';
-    ctx.lineWidth = 2;
+    ctx.strokeStyle = `rgba(255, 215, 0, ${0.9 + audioIntensity * 0.1})`;
+    ctx.lineWidth = 2 + audioIntensity * 2;
     ctx.stroke();
     
     // Om symbol

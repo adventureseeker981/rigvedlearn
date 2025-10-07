@@ -219,6 +219,17 @@ const LessonView = () => {
               </div>
             )}
 
+            {/* Visualizer Button */}
+            <div className="mb-4">
+              <Button
+                onClick={() => setShowVisualizer(true)}
+                className="w-full bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-600 hover:to-pink-700 text-white"
+              >
+                <Sparkles className="mr-2" size={18} />
+                Open Mantra Visualizer
+              </Button>
+            </div>
+
             {/* Controls */}
             <div className="flex flex-col sm:flex-row gap-3">
               <Button
@@ -246,6 +257,17 @@ const LessonView = () => {
                 {currentVerseIndex === verses.length - 1 ? 'Complete Lesson' : 'Next Verse'}
               </Button>
             </div>
+          </CardContent>
+        </Card>
+      </div>
+
+      {/* Mantra Visualizer Modal */}
+      {showVisualizer && (
+        <MantraVisualizerPage
+          verse={currentVerse}
+          onClose={() => setShowVisualizer(false)}
+        />
+      )}
           </CardContent>
         </Card>
       </div>

@@ -20,3 +20,5 @@ The text portrays deities as collaborative friends and co-creators with humans r
  https://sacred-study-7.emergent.host
 
  # pdf of our presentation
+
+  https://github.com/adventureseeker981/rigvedlearn/blob/main/Hackathon%20Presentation.pdf

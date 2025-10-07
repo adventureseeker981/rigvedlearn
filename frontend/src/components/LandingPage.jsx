@@ -140,11 +140,11 @@ const LandingPage = () => {
               return (
                 <Card key={index} className="hover:shadow-xl transition-all hover:-translate-y-1">
                   <CardContent className="p-6">
-                    <div className="w-12 h-12 bg-gradient-to-br from-[#FF9933] to-[#FFD700] rounded-lg flex items-center justify-center mb-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-teal-500 to-emerald-500 rounded-lg flex items-center justify-center mb-4">
                       <Icon className="text-white" size={24} />
                     </div>
-                    <h3 className="text-xl font-bold text-[#000080] mb-2">{feature.title}</h3>
-                    <p className="text-gray-600">{feature.description}</p>
+                    <h3 className="text-xl font-bold text-slate-800 mb-2">{feature.title}</h3>
+                    <p className="text-slate-600">{feature.description}</p>
                   </CardContent>
                 </Card>
               );

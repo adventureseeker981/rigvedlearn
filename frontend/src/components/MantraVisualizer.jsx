@@ -34,14 +34,18 @@ const MantraVisualizer = ({ sanskrit, transliteration, isPlaying, onTogglePlay, 
         setPhase(p => p + 0.02);
       }
 
+      // Audio reactivity - scale based on audio level
+      const reactiveScale = 1 + (audioLevel * 0.5);
+      const reactiveIntensity = audioLevel * 2;
+
       // Draw Sri Yantra inspired sacred geometry
-      drawSriYantra(ctx, centerX, centerY, 150, phase);
+      drawSriYantra(ctx, centerX, centerY, 150 * reactiveScale, phase, reactiveIntensity);
       
       // Draw mandala patterns
-      drawMandala(ctx, centerX, centerY, 200, phase);
+      drawMandala(ctx, centerX, centerY, 200, phase, reactiveIntensity);
       
       // Draw lotus petals
-      drawLotus(ctx, centerX, centerY, 180, phase);
+      drawLotus(ctx, centerX, centerY, 180 * reactiveScale, phase, reactiveIntensity);
 
       animationRef.current = requestAnimationFrame(animate);
     };

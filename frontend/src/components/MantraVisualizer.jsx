@@ -57,7 +57,7 @@ const MantraVisualizer = ({ sanskrit, transliteration, isPlaying, onTogglePlay, 
         cancelAnimationFrame(animationRef.current);
       }
     };
-  }, [isPlaying, phase]);
+  }, [isPlaying, phase, audioLevel]);
 
   // Sri Yantra triangles
   const drawSriYantra = (ctx, x, y, size, phase, audioIntensity = 0) => {

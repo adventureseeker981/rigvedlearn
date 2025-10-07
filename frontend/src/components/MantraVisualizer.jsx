@@ -315,6 +315,7 @@ const MantraVisualizerPage = ({ verse, onClose }) => {
             transliteration={verse.transliteration}
             isPlaying={isPlaying}
             onTogglePlay={handleToggleAnimation}
+            audioLevel={audioLevel}
           />
 
           <div className="mt-6 p-4 bg-gradient-to-br from-white to-[#FFF8DC]/50 rounded-lg">

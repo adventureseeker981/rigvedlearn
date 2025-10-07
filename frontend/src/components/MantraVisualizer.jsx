@@ -218,14 +218,63 @@ const MantraVisualizer = ({ sanskrit, transliteration, isPlaying, onTogglePlay, 
 const MantraVisualizerPage = ({ verse, onClose }) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isSpeaking, setIsSpeaking] = useState(false);
+  const [audioLevel, setAudioLevel] = useState(0);
+  const audioContextRef = useRef(null);
+  const analyserRef = useRef(null);
+  const audioElementRef = useRef(null);
+  const animationFrameRef = useRef(null);
 
   useEffect(() => {
     setIsPlaying(true);
+    
+    // Initialize Web Audio API for visualization
+    try {
+      const AudioContext = window.AudioContext || window.webkitAudioContext;
+      audioContextRef.current = new AudioContext();
+      analyserRef.current = audioContextRef.current.createAnalyser();
+      analyserRef.current.fftSize = 256;
+    } catch (error) {
+      console.warn('Web Audio API not supported', error);
+    }
+    
     return () => {
       stopSpeech();
       setIsPlaying(false);
+      if (audioContextRef.current) {
+        audioContextRef.current.close();
+      }
+      if (animationFrameRef.current) {
+        cancelAnimationFrame(animationFrameRef.current);
+      }
     };
   }, []);
+
+  // Simulate audio level from speech synthesis
+  useEffect(() => {
+    if (isSpeaking) {
+      const simulateAudioLevel = () => {
+        // Create a pulsing effect that simulates voice activity
+        const time = Date.now() / 1000;
+        const baseLevel = Math.sin(time * 4) * 0.3 + 0.3;
+        const variation = Math.sin(time * 8) * 0.2;
+        const pulse = Math.sin(time * 2) * 0.15;
+        setAudioLevel(Math.max(0, Math.min(1, baseLevel + variation + pulse)));
+        animationFrameRef.current = requestAnimationFrame(simulateAudioLevel);
+      };
+      simulateAudioLevel();
+    } else {
+      setAudioLevel(0);
+      if (animationFrameRef.current) {
+        cancelAnimationFrame(animationFrameRef.current);
+      }
+    }
+    
+    return () => {
+      if (animationFrameRef.current) {
+        cancelAnimationFrame(animationFrameRef.current);
+      }
+    };
+  }, [isSpeaking]);
 
   const handleToggleAudio = () => {
     if (isSpeaking) {

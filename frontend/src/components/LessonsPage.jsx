@@ -137,7 +137,7 @@ const LessonsPage = () => {
                 </Card>
 
                 {/* Lessons */}
-                <h3 className="text-xl font-bold text-[#000080] mb-4">Lessons</h3>
+                <h3 className="text-xl font-bold text-slate-800 mb-4">Lessons</h3>
                 <div className="space-y-3">
                   {selectedHymn.lessons.map((lesson, index) => {
                     const lessonCompleted = progress.lessonsCompleted.includes(`${selectedHymn.id}-${lesson.id}`);

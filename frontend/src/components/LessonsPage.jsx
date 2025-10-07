@@ -46,7 +46,7 @@ const LessonsPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#FFF8DC] to-white">
       {/* Header */}
-      <div className="bg-gradient-to-r from-[#000080] to-[#000080]/90 text-white py-6 shadow-lg">
+      <div className="bg-gradient-to-r from-slate-800 to-slate-900 text-white py-6 shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Button
             variant="ghost"

@@ -214,12 +214,12 @@ const Dashboard = () => {
             </CardHeader>
             <CardContent>
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-gradient-to-br from-[#000080] to-blue-600 rounded-full flex items-center justify-center">
+                <div className="w-12 h-12 bg-gradient-to-br from-violet-500 to-purple-600 rounded-full flex items-center justify-center">
                   <Trophy className="text-white" size={24} />
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-[#000080]">{xpData.currentLevel}</div>
-                  <div className="text-xs text-gray-500">XP: {xpData.currentXP}/{xpData.xpToNextLevel}</div>
+                  <div className="text-3xl font-bold text-violet-600">{xpData.currentLevel}</div>
+                  <div className="text-xs text-slate-500">XP: {xpData.currentXP}/{xpData.xpToNextLevel}</div>
                 </div>
               </div>
             </CardContent>

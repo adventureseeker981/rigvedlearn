@@ -65,7 +65,7 @@ const LessonsPage = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Hymns List */}
           <div className="lg:col-span-1">
-            <h2 className="text-xl font-bold text-[#000080] mb-4">Hymns</h2>
+            <h2 className="text-xl font-bold text-slate-800 mb-4">Hymns</h2>
             <div className="space-y-3">
               {hymns.map((hymn, index) => {
                 const unlocked = isHymnUnlocked(index);

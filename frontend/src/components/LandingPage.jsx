@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Book, Target, Zap, Award, Flame, Droplet, Heart, ArrowRight, PlayCircle } from 'lucide-react';
+import { Book, Target, Zap, Award, Flame, Droplet, Heart, ArrowRight } from 'lucide-react';
 import { Button } from './ui/button';
 import { Card, CardContent } from './ui/card';
 

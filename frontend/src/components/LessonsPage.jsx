@@ -9,8 +9,13 @@ import { getUserProgress } from '../utils/sessionStorage';
 
 const LessonsPage = () => {
   const navigate = useNavigate();
-  const progress = getUserProgress();
+  const [progress, setProgress] = useState(null);
   const [selectedHymn, setSelectedHymn] = useState(null);
+
+  useEffect(() => {
+    initializeProgress();
+    setProgress(getUserProgress());
+  }, []);
 
   const isHymnUnlocked = (hymnIndex) => {
     return hymnIndex === 0 || progress.hymnsCompleted.includes(hymns[hymnIndex - 1].id);

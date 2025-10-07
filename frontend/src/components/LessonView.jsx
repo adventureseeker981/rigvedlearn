@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { ArrowLeft, Volume2, VolumeX, Lightbulb, CheckCircle2 } from 'lucide-react';
+import { ArrowLeft, Volume2, VolumeX, Lightbulb, CheckCircle2, Sparkles } from 'lucide-react';
 import { Button } from './ui/button';
 import { Card, CardContent } from './ui/card';
 import { Progress } from './ui/progress';
@@ -9,6 +9,7 @@ import { hymns } from '../data/mockData';
 import { getUserProgress, updateUserProgress, addXP } from '../utils/sessionStorage';
 import { speakSanskrit, stopSpeech } from '../utils/speechSynthesis';
 import { useToast } from '../hooks/use-toast';
+import MantraVisualizerPage from './MantraVisualizer';
 
 const LessonView = () => {
   const { hymnId, lessonId } = useParams();

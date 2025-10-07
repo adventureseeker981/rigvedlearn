@@ -12,4 +12,4 @@ The text portrays deities as collaborative friends and co-creators with humans r
 
 # the link to the site
 
-sacred-study-7.emergent.host
+ https://sacred-study-7.emergent.host

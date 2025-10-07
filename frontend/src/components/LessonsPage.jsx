@@ -125,12 +125,12 @@ const LessonsPage = () => {
                   <CardContent>
                     <div className="space-y-4">
                       <div>
-                        <h4 className="font-semibold text-[#000080] mb-2">Cultural Context</h4>
-                        <p className="text-gray-700">{selectedHymn.culturalContext}</p>
+                        <h4 className="font-semibold text-slate-800 mb-2">Cultural Context</h4>
+                        <p className="text-slate-700">{selectedHymn.culturalContext}</p>
                       </div>
-                      <div className="bg-[#FFF8DC]/50 p-4 rounded-lg">
-                        <h4 className="font-semibold text-[#FF9933] mb-2">Today's Micro-Action</h4>
-                        <p className="text-gray-700">{selectedHymn.microAction}</p>
+                      <div className="bg-teal-50 p-4 rounded-lg">
+                        <h4 className="font-semibold text-teal-700 mb-2">Today's Micro-Action</h4>
+                        <p className="text-slate-700">{selectedHymn.microAction}</p>
                       </div>
                     </div>
                   </CardContent>

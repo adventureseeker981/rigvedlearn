@@ -60,13 +60,13 @@ const MantraVisualizer = ({ sanskrit, transliteration, isPlaying, onTogglePlay, 
   }, [isPlaying, phase]);
 
   // Sri Yantra triangles
-  const drawSriYantra = (ctx, x, y, size, phase) => {
+  const drawSriYantra = (ctx, x, y, size, phase, audioIntensity = 0) => {
     const triangles = 9;
     
     for (let i = 0; i < triangles; i++) {
       const rotation = (i * Math.PI * 2 / triangles) + phase;
-      const scale = 1 + Math.sin(phase * 2 + i) * 0.1;
-      const alpha = 0.3 + Math.sin(phase + i) * 0.2;
+      const scale = 1 + Math.sin(phase * 2 + i) * 0.1 + (audioIntensity * 0.3);
+      const alpha = 0.3 + Math.sin(phase + i) * 0.2 + (audioIntensity * 0.3);
       
       ctx.save();
       ctx.translate(x, y);

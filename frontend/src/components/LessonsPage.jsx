@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ArrowLeft, Lock, CheckCircle, Circle } from 'lucide-react';
+import { ArrowLeft, Lock, CheckCircle, Circle, Book } from 'lucide-react';
 import { Button } from './ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Badge } from './ui/badge';
 import { hymns } from '../data/mockData';
-import { getUserProgress } from '../utils/sessionStorage';
+import { getUserProgress, initializeProgress } from '../utils/sessionStorage';
 
 const LessonsPage = () => {
   const navigate = useNavigate();

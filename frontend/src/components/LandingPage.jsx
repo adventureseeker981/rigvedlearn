@@ -87,16 +87,16 @@ const LandingPage = () => {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-8 max-w-2xl mx-auto mt-16">
               <div>
-                <div className="text-3xl font-bold text-[#FF9933]">10+</div>
-                <div className="text-sm text-gray-600">Sacred Hymns</div>
+                <div className="text-3xl font-bold text-teal-600">10+</div>
+                <div className="text-sm text-slate-600">Sacred Hymns</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-[#FFD700]">50+</div>
-                <div className="text-sm text-gray-600">Bite-Sized Lessons</div>
+                <div className="text-3xl font-bold text-emerald-600">50+</div>
+                <div className="text-sm text-slate-600">Bite-Sized Lessons</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-[#000080]">20</div>
-                <div className="text-sm text-gray-600">Mastery Levels</div>
+                <div className="text-3xl font-bold text-cyan-600">20</div>
+                <div className="text-sm text-slate-600">Mastery Levels</div>
               </div>
             </div>
           </div>

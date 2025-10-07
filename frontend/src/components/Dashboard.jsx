@@ -82,18 +82,29 @@ const Dashboard = () => {
                 <Download size={16} className="mr-2" />
                 Export
               </Button>
-              <label>
-                <input type="file" accept=".json" onChange={handleImport} className="hidden" />
-                <Button
-                  variant="outline"
-                  size="sm"
-                  as="span"
-                  className="bg-white/10 border-white/20 hover:bg-white/20 text-white cursor-pointer"
-                >
-                  <Upload size={16} className="mr-2" />
-                  Import
-                </Button>
-              </label>
+              <div>
+                <input 
+                  type="file" 
+                  accept=".json" 
+                  onChange={handleImport} 
+                  className="hidden" 
+                  id="import-file"
+                />
+                <label htmlFor="import-file">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="bg-white/10 border-white/20 hover:bg-white/20 text-white cursor-pointer"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      document.getElementById('import-file').click();
+                    }}
+                  >
+                    <Upload size={16} className="mr-2" />
+                    Import
+                  </Button>
+                </label>
+              </div>
             </div>
           </div>
         </div>

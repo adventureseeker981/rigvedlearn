@@ -117,17 +117,70 @@ const Dashboard = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        {/* Action Buttons - Moved to Top */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+          <Button
+            id="today-lesson-btn"
+            size="lg"
+            onClick={() => navigate('/lessons')}
+            className="h-24 bg-gradient-to-br from-teal-500 to-emerald-500 hover:from-teal-600 hover:to-emerald-600 text-white shadow-lg hover:shadow-xl transition-all"
+          >
+            <div className="text-center">
+              <Play className="mx-auto mb-2" size={24} />
+              <div className="font-bold">Today's Lesson</div>
+            </div>
+          </Button>
+
+          <Button
+            id="practice-btn"
+            size="lg"
+            variant="outline"
+            onClick={() => navigate('/practice')}
+            className="h-24 border-2 border-violet-500 text-violet-600 hover:bg-violet-500 hover:text-white transition-all"
+          >
+            <div className="text-center">
+              <Book className="mx-auto mb-2" size={24} />
+              <div className="font-bold">Practice Mode</div>
+            </div>
+          </Button>
+
+          <Button
+            id="achievements-btn"
+            size="lg"
+            variant="outline"
+            onClick={() => navigate('/achievements')}
+            className="h-24 border-2 border-amber-500 text-amber-600 hover:bg-amber-500 hover:text-white transition-all"
+          >
+            <div className="text-center">
+              <Trophy className="mx-auto mb-2" size={24} />
+              <div className="font-bold">Achievements</div>
+            </div>
+          </Button>
+
+          <Button
+            size="lg"
+            variant="outline"
+            onClick={() => navigate('/quests')}
+            className="h-24 border-2 border-rose-500 text-rose-600 hover:bg-rose-500 hover:text-white transition-all"
+          >
+            <div className="text-center">
+              <Settings className="mx-auto mb-2" size={24} />
+              <div className="font-bold">Quests & Habits</div>
+            </div>
+          </Button>
+        </div>
+
         {/* Daily Quote */}
         {dailyQuote && (
-          <Card className="mb-8 border-2 border-[#FFD700]/30 bg-gradient-to-br from-white to-[#FFF8DC]/50">
+          <Card className="mb-8 border-2 border-teal-200 bg-gradient-to-br from-white to-teal-50">
             <CardContent className="p-6">
               <div className="flex items-start gap-4">
-                <Sparkles className="text-[#FFD700] flex-shrink-0 mt-1" size={24} />
+                <Sparkles className="text-teal-500 flex-shrink-0 mt-1" size={24} />
                 <div>
-                  <p className="text-lg text-[#000080] font-semibold mb-1">{dailyQuote.sanskrit}</p>
-                  <p className="text-sm text-gray-600 italic mb-2">{dailyQuote.transliteration}</p>
-                  <p className="text-gray-700">{dailyQuote.meaning}</p>
-                  <p className="text-xs text-gray-500 mt-2">— {dailyQuote.reference}</p>
+                  <p className="text-lg text-slate-800 font-semibold mb-1">{dailyQuote.sanskrit}</p>
+                  <p className="text-sm text-slate-600 italic mb-2">{dailyQuote.transliteration}</p>
+                  <p className="text-slate-700">{dailyQuote.meaning}</p>
+                  <p className="text-xs text-slate-500 mt-2">— {dailyQuote.reference}</p>
                 </div>
               </div>
             </CardContent>

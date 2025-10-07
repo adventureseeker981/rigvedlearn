@@ -1,3 +1,8 @@
+# Our Introduction
+
+Namaste! We are the students of Rishihood University located in Sonipat, Haryana. We are currently pursuing our first year bachelorate degree.
+we are currently studying a course in our collage called UNDERSTANDING INDIA which teaches us about the history and culture of India and from there we got the interest in this field.
+We are open to future opportunities like this with full interest and dedicaton.
 # Why we chose Mandala 1
 
 Mandala 1 of the Rigveda holds profound significance as the opening book of humanity's oldest sacred text,
@@ -13,3 +18,5 @@ The text portrays deities as collaborative friends and co-creators with humans r
 # the link to the site
 
  https://sacred-study-7.emergent.host
+
+ # pdf of our presentation

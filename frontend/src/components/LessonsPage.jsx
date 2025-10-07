@@ -86,7 +86,7 @@ const LessonsPage = () => {
                         </div>
                         <div className="flex-1 min-w-0">
                           <div className="flex items-center gap-2 mb-1">
-                            <h3 className="font-semibold text-[#000080] truncate">{hymn.title}</h3>
+                            <h3 className="font-semibold text-slate-800 truncate">{hymn.title}</h3>
                             {!unlocked && <Lock size={14} className="text-gray-400" />}
                             {completed && <CheckCircle size={14} className="text-green-500" />}
                           </div>

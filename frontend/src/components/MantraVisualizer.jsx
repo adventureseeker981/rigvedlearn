@@ -4,7 +4,7 @@ import { Button } from './ui/button';
 import { Card, CardContent } from './ui/card';
 import { speakSanskrit, stopSpeech } from '../utils/speechSynthesis';
 
-const MantraVisualizer = ({ sanskrit, transliteration, isPlaying, onTogglePlay }) => {
+const MantraVisualizer = ({ sanskrit, transliteration, isPlaying, onTogglePlay, audioLevel = 0 }) => {
   const canvasRef = useRef(null);
   const animationRef = useRef(null);
   const [phase, setPhase] = useState(0);

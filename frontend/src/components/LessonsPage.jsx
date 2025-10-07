@@ -114,7 +114,7 @@ const LessonsPage = () => {
                         <span className="text-white font-bold text-lg">{selectedHymn.number}</span>
                       </div>
                       <div>
-                        <CardTitle className="text-2xl text-[#000080] mb-2">{selectedHymn.title}</CardTitle>
+                        <CardTitle className="text-2xl text-slate-800 mb-2">{selectedHymn.title}</CardTitle>
                         <p className="text-sm text-gray-600">Dedicated to {selectedHymn.deity}</p>
                         <Badge className={`text-xs mt-2 ${difficultyColors[selectedHymn.difficulty]}`}>
                           {selectedHymn.difficulty}

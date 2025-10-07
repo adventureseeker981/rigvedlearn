@@ -153,31 +153,10 @@ const LandingPage = () => {
         </div>
       </div>
 
-      {/* CTA Section */}
-      <div className="py-20 bg-gradient-to-r from-[#000080] to-[#000080]/90">
-        <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            Ready to Begin Your Vedic Journey?
-          </h2>
-          <p className="text-xl text-gray-200 mb-8">
-            Join thousands learning ancient wisdom in a modern, engaging way.
-            No lengthy PDFs, just pure wisdom in bite-sized lessons.
-          </p>
-          <Button
-            size="lg"
-            onClick={() => navigate('/dashboard')}
-            className="bg-gradient-to-r from-[#FF9933] to-[#FFD700] hover:from-[#FF9933]/90 hover:to-[#FFD700]/90 text-white px-12 py-6 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all"
-          >
-            Start Learning Now
-            <ArrowRight className="ml-2" size={20} />
-          </Button>
-        </div>
-      </div>
-
       {/* Footer */}
-      <div className="bg-[#000080] text-white py-8">
+      <div className="bg-gradient-to-r from-slate-800 to-slate-900 text-white py-8 mt-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-sm">
+          <p className="text-sm text-gray-300">
             Built with respect for UNESCO's Memory of the World heritage.
             <br />
             Preserving ancient wisdom through modern technology.

@@ -73,7 +73,7 @@ const LandingPage = () => {
               Transform ancient Sanskrit hymns into daily wisdom and actionable habits.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <div className="flex justify-center">
               <Button
                 size="lg"
                 onClick={() => navigate('/dashboard')}
@@ -81,15 +81,6 @@ const LandingPage = () => {
               >
                 Start Your Journey
                 <ArrowRight className="ml-2" size={20} />
-              </Button>
-              
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-2 border-[#000080] text-[#000080] hover:bg-[#000080] hover:text-white px-8 py-6 text-lg rounded-xl transition-all"
-              >
-                <PlayCircle className="mr-2" size={20} />
-                Watch Demo
               </Button>
             </div>
 

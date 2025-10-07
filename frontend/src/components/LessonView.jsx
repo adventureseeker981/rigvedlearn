@@ -268,9 +268,6 @@ const LessonView = () => {
           onClose={() => setShowVisualizer(false)}
         />
       )}
-          </CardContent>
-        </Card>
-      </div>
     </div>
   );
 };

@@ -20,6 +20,7 @@ const LessonView = () => {
   const [showHint, setShowHint] = useState(false);
   const [isSpeaking, setIsSpeaking] = useState(false);
   const [lessonComplete, setLessonComplete] = useState(false);
+  const [showVisualizer, setShowVisualizer] = useState(false);
 
   const hymn = hymns.find(h => h.id === parseInt(hymnId));
   const lesson = hymn?.lessons.find(l => l.id === parseInt(lessonId));

@@ -162,7 +162,7 @@ const LessonsPage = () => {
                                 )}
                               </div>
                               <div>
-                                <h4 className="font-semibold text-[#000080]">{lesson.title}</h4>
+                                <h4 className="font-semibold text-slate-800">{lesson.title}</h4>
                                 <p className="text-xs text-gray-500">{lesson.verses.length} verses • ~5 min</p>
                               </div>
                             </div>

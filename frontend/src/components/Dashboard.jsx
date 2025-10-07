@@ -249,7 +249,7 @@ const Dashboard = () => {
           {/* Progress Wheel */}
           <Card id="progress-wheel" className="hover:shadow-lg transition-shadow">
             <CardHeader>
-              <CardTitle className="text-[#000080]">Mandala 1 Progress</CardTitle>
+              <CardTitle className="text-slate-800">Mandala 1 Progress</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="flex flex-col items-center justify-center py-8">

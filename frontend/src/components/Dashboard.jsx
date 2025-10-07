@@ -232,12 +232,12 @@ const Dashboard = () => {
             </CardHeader>
             <CardContent>
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-gradient-to-br from-[#FFD700] to-yellow-600 rounded-full flex items-center justify-center">
+                <div className="w-12 h-12 bg-gradient-to-br from-amber-500 to-yellow-500 rounded-full flex items-center justify-center">
                   <Book className="text-white" size={24} />
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-[#FFD700]">{progress.totalVersesLearned}</div>
-                  <div className="text-xs text-gray-500">Accuracy: {progress.accuracy}%</div>
+                  <div className="text-3xl font-bold text-amber-600">{progress.totalVersesLearned}</div>
+                  <div className="text-xs text-slate-500">Accuracy: {progress.accuracy}%</div>
                 </div>
               </div>
             </CardContent>

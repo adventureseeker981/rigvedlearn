@@ -92,18 +92,18 @@ const MantraVisualizer = ({ sanskrit, transliteration, isPlaying, onTogglePlay, 
   };
 
   // Mandala patterns
-  const drawMandala = (ctx, x, y, radius, phase) => {
+  const drawMandala = (ctx, x, y, radius, phase, audioIntensity = 0) => {
     const petals = 12;
     
     for (let layer = 0; layer < 3; layer++) {
-      const layerRadius = radius - (layer * 30);
+      const layerRadius = (radius - (layer * 30)) * (1 + audioIntensity * 0.2);
       
       for (let i = 0; i < petals; i++) {
         const angle = (i * Math.PI * 2 / petals) + phase + (layer * 0.5);
         const petalX = x + Math.cos(angle) * layerRadius;
         const petalY = y + Math.sin(angle) * layerRadius;
-        const petalSize = 20 - (layer * 5);
-        const alpha = 0.2 + Math.sin(phase * 2 + i + layer) * 0.15;
+        const petalSize = (20 - (layer * 5)) * (1 + audioIntensity * 0.5);
+        const alpha = 0.2 + Math.sin(phase * 2 + i + layer) * 0.15 + (audioIntensity * 0.4);
         
         ctx.beginPath();
         ctx.arc(petalX, petalY, petalSize, 0, Math.PI * 2);

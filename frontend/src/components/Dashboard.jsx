@@ -196,12 +196,12 @@ const Dashboard = () => {
             </CardHeader>
             <CardContent>
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-600 rounded-full flex items-center justify-center">
+                <div className="w-12 h-12 bg-gradient-to-br from-rose-500 to-orange-500 rounded-full flex items-center justify-center">
                   <Flame className="text-white" size={24} />
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-[#FF9933]">{streakData.currentStreak}</div>
-                  <div className="text-xs text-gray-500">Longest: {streakData.longestStreak} days</div>
+                  <div className="text-3xl font-bold text-rose-600">{streakData.currentStreak}</div>
+                  <div className="text-xs text-slate-500">Longest: {streakData.longestStreak} days</div>
                 </div>
               </div>
             </CardContent>
